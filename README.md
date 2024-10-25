@@ -1,4 +1,6 @@
-![logo](https://user-images.githubusercontent.com/44912347/202296600-c5f247d6-9616-49db-88f0-38433429d781.jpg)
+# UML Class Diagram
+
+<img width="881" alt="Screenshot 2024-10-25 at 12 33 08" src="https://github.com/user-attachments/assets/76e15c44-42cb-4aa4-af1c-4ec959f8da00">
 
 # Scooter Project
 
