@@ -2,6 +2,13 @@
 
 <img width="881" alt="Screenshot 2024-10-25 at 12 33 08" src="https://github.com/user-attachments/assets/76e15c44-42cb-4aa4-af1c-4ec959f8da00">
 
+# UML Use Case Diagram
+
+<img width="1465" alt="Screenshot 2024-10-25 at 14 35 05" src="https://github.com/user-attachments/assets/5f820e7b-3727-4f80-9cc9-44407d3c60da">
+<img width="1465" alt="Screenshot 2024-10-25 at 14 35 23" src="https://github.com/user-attachments/assets/3efdb0f4-baac-49e5-bb42-819e2704954e">
+<img width="1466" alt="Screenshot 2024-10-25 at 14 35 45" src="https://github.com/user-attachments/assets/ad69897b-3662-49d7-afc2-36ea6539eec3">
+
+
 # Scooter Project
 
 You are a Software Engineer for the city of Baltimore. You have been asked to design, test, and write the back end for an electric scooter hire app. You won't need to design the front end.
