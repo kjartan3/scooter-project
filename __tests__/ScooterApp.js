@@ -78,8 +78,8 @@ describe("ScooterApp.logoutUser(username)", () => {
 describe("ScooterApp.dockScooter(scooter, station)", () => {
   it.skip("docks a scooter at a station", () => {
     // Arrange
-    const station = 'Central'; 
     const scooter = { id: 'scooter1' };
+    const station = 'Central'; 
     ScooterApp.stations = { Central: [] };
     // Act
     ScooterApp.dockScooter(scooter, station);
@@ -89,27 +89,47 @@ describe("ScooterApp.dockScooter(scooter, station)", () => {
 
   it.skip("throws an error if a station does not exist", () => {
     // Arrange
+    const scooter = { id: 'scooter1' };
+    const station = 'Centrally'; 
     // Act
+    const result = ScooterApp.dockScooter(scooter, station);
     // Assert
+    expect(result).toBe(false);
+    expect(() => ScooterApp.dockScooter(scooter, station)).toThrow('Station does not exist');
   });
 
   it.skip("throws an error if a scooter is already at a station", () => {
     // Arrange
+    const scooter = { id: 'scooter1' };
+    const station = 'Central'; 
+    ScooterApp.stations = { Central: [scooter] };
     // Act
+    const result = ScooterApp.dockScooter(scooter, station);
     // Assert
+    expect(result).toBe(false);
+    expect(() => ScooterApp.dockScooter(scooter, station)).toThrow('Scooter already at station');
   });
 });
 
 describe("ScooterApp.rentScooter(scooter, user)", () => {
   it.skip("rents a scooter out to a user", () => {
     // Arrange
+    const scooter = { id: 'scooter1', isRented: false };
+    const user = { id: 'user1' };
     // Act
+    ScooterApp.rentScooter(scooter, user);
     // Assert
+    expect(scooter.isRented).toBe(true);
+    expect(scooter.rentedBy).toBe(user);
   });
 
   it.skip("throws an error if a scooter is already rented", () => {
     // Arrange
+    const scooter = { id: 'scooter1', isRented: true }; 
+    const user = { id: 'user1' }; 
     // Act
+    ScooterApp.rentScooter(scooter, user);
     // Assert
+    expect(() => ScooterApp.rentScooter(scooter, user)).toThrow('Scooter is already rented');
   });
 });
